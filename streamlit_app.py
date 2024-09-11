@@ -11,7 +11,7 @@ st.write("Choose the fruits you want in your custom Smoothie!")
 #option = st.selectbox("What is your favorite fruit?", ("Banana", "Strawberries", "Peaches"))
 
 cnx = st.connection("snowflake")
-session = connection.session()
+session = cnx.session()
 
 my_dataframe = session.table("SMOOTHIES.PUBLIC.FRUIT_OPTIONS").select(col('FRUIT_NAME'))
 #st.dataframe(data=my_dataframe, use_container_width=True)
