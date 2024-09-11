@@ -1,4 +1,7 @@
-snowflake-snowpark-python==0.12.0  # Correct version number
-streamlit==1.25.0  # Or whichever version you need
-# Add any other dependencies here
-
+name: app_environment
+channels:
+  - snowflake
+dependencies:
+  - python=3.8.*
+  - snowflake-snowpark-python=
+  - streamlit=
